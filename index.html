@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <!-- navbar start -->
+         <div class="sticky top-0 bg-stone-200 bg-opacity backdrop-blur-md">
+            <div class="navbar w-9/10 lg:w-9/12 m-auto flex justify-between">
+            <div class="navbar-start">
+    <a id="blog-button" onclick="myFunction(this)" class="btn bg-[#B4F461] text-xl">Blog </a>
+  </div>
+  <div class="navbar-center">
+    <div class="flex justify-evenly">
+      <a class="flex-1"><img src="./assets/logo.png"></a>
+      <a class="flex-1 text-xl font-semibold inline">Donate Bangladesh</a>
+    </div>
+  </div>
+  <div class="navbar-end">
+     <a><img src="./assets/coin.png"></a>
+     <a><span id="nav-balance">5500</span>  BDT</a>
+  </div>
+</div>
+</div>
+<!-- navbar end  -->
+ <!-- button section start -->
+  <section class="sticky top-12 w-9/10 lg:w-9/12 m-auto p-9 flex justify-center">
+    <button id="button1" class="border border-gray-200 p-3 rounded-lg text-xl font-semibold mr-3 bg-[#B4F461]">Donation</button>
+    <button id="button2" class="border border-gray-200 p-3 rounded-lg text-xl font-semibold bg-white">History</button>
+  </section>
+ <!-- button section end -->
+  <!-- Card Section Start -->
+   <section id="section1" class="hidden">
+   <!-- 1st Card -->
+    <div class="lg:flex justify-between border border-gray-200 p-6 rounded-2xl w-9/10 lg: w-9/12 m-auto">
+        <div class="flex-1 mr-4"><img src="./assets/noakhali.png"></div>
+        <br>
+    <div class="flex-1">
+        <div class="flex justify-start p-4 border border-gray-100 rounded-xl lg:mr-80 bg-stone-200">
+            <a><img src="./assets/coin.png"></a>
+            <a><span id="balance1">0</span> BDT</a>
+        </div>
+        <h1 class="p-2 text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+        <p class="p-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+        <div class="border border-gray-200 p-4 rounded-2xl">
+            <input id="input1" type="number" placeholder="Write Donation Amount">
+        </div>
+        <br>
+        <div id="btn1" class="bg-[#B4F461] flex justify-center rounded-2xl p-2 text-xl font-bold">
+            <button>Donate Now</button>
+        </div>
+    </div>
+    </div>
+    <br>
+   <!-- 2nd Card -->
+    <div class="lg:flex justify-between border border-gray-200 p-6 rounded-2xl w-9/10 lg: w-9/12 m-auto">
+        <div class="flex-1 mr-4"><img src="./assets/feni.png"></div>
+    <br>
+        <div class="flex-1">
+            <div class="flex justify-start p-4 border border-gray-100 rounded-xl lg:mr-80 bg-stone-200 align-middle">
+        <a><img src="./assets/coin.png"></a>
+     <a><span id="balance2">600</span></a>
+     </div>
+        <h1 class="p-2 text-2xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
+        <p class="p-2"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+        <div class="border border-gray-200 p-4 rounded-2xl">
+            <input id="input2" type="number" placeholder="Write Donation Amount">
+        </div>
+        <br>
+        <div id="btn2" class="bg-[#B4F461] flex justify-center rounded-2xl p-2 text-xl font-bold">
+            <button>Donate Now</button>
+        </div>
+    </div>
+    </div>
+    <br>
+   <!-- 3rd Card -->
+    <div class="lg:flex justify-between border border-gray-200 p-6 rounded-2xl w-9/10 lg: w-9/12 m-auto">
+        <div class="flex-1 mr-4"><img src="./assets/quota-protest.png"></div>
+    <br>
+        <div class="flex-1">
+       <div class="flex justify-start p-4 border border-gray-100 rounded-xl lg:mr-80 bg-stone-200 align-middle">
+        <a><img src="./assets/coin.png"></a>
+     <a><span id="balance3">2400</span> BDT</a>
+     </div>
+        <h1 class="p-2 text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+        <p class="p-2"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+        <div class="border border-gray-200 p-4 rounded-2xl">
+            <input id="input3" type="number" placeholder="Write Donation Amount">
+        </div>
+        <br>
+        <div id="btn3" class="bg-[#B4F461] flex justify-center rounded-2xl p-2 text-xl font-bold">
+            <button>Donate Now</button>
+        </div>
+    </div>
+    </div>
+    </section>
+  <!-- Card Section end -->
+</header>
+<main>
+<!-- History Section Start -->
+ <section id="section2" class="my-5 hidden">
+
+    <div class="w-9/10 lg: w-9/12 m-auto text-xl mb-4 font-bold border border-gray-200 rounded-xl p-10">
+    <h1><span id="input4">96500</span> Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+    <div id="history-item" class="text-xs text-gray-500 pt-2 font-normal"></div>
+ </div>
+ <div class="w-9/10 lg: w-9/12 m-auto text-xl mb-4 font-bold border border-gray-200 rounded-xl p-10">
+    <h1><span id="input5">6500</span> Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+ <div id="history-item1" class="text-xs text-gray-500 pt-2 font-normal"></div>
+</div>
+ <div class="w-9/10 lg: w-9/12 m-auto text-xl font-bold border border-gray-200 rounded-xl p-10">
+    <h1><span id="input6">15500</span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+ <div id="history-item2" class="text-xs text-gray-500 pt-2 font-normal"></div>
+</div>
+ </section>
+<!-- History Section end -->
+ <!-- modal section start -->
+  <section id="my-modal" class="hidden">
+    <div id="popup" class="bg-white text-center border border-gray-200 rounded-2xl w-3/12 m-auto">
+        <h1 class="text-2xl font-extrabold p-4">Congrates!</h1>
+        <img class="pb-4 w-5/100 m-auto" src="./assets/coin.png">
+        <p class="p-4">You Have Donated for Humankind</p>
+        <p class="p-4 text-xl font-bold">Successfully</p>
+        <button class="p-4 pb-5 bg-gray-200 rounded-lg">close confirmation</button>
+    <br>
+    <br>
+    </div>
+  </section>
+ <!-- modal section end -->
+  <!-- blog section start -->
+   <section id="section3">
+    <div class="w-9/10 lg: w-9/12 m-auto text-2xl my-6 font-extrabold">
+        <h>Important FAQ ❔</h>
+    </div>
+ <div class="collapse collapse-arrow my-4 w-9/10 lg:w-9/12 m-auto border border-gray-200 rounded-xl p-10">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title text-2xl font-bold">What is the Document Object Model (DOM)?</div>
+  <div class="collapse-content">
+    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow my-4 w-9/10 lg: w-9/12 m-auto border border-gray-200 rounded-xl p-10">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-bold">what is event delegation in the context of the DOM, and why is it useful?</div>
+  <div class="collapse-content">
+    <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.Event delegation allows us to attach a single event listener, to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future.</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow my-4 w-9/10 lg: w-9/12 m-auto border border-gray-200 rounded-xl p-10">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-bold">How do you select an element from the DOM?</div>
+  <div class="collapse-content">
+    <ul>
+        <li>Using getElementById</li>
+        <li>Using getElementsByClassName</li>
+        <li>Using getElementsByTagName</li>
+        <li>Using querySelector</li>
+        <li>Using querySelectorAll</li>
+        <li>Changing the Text Content</li>
+        <li>Changing the HTML Content</li>
+        <li>Changing the Attribute Value</li>
+    </ul>
+  </div>
+  </div>
+<div class="collapse collapse-arrow my-4 w-9/10 lg: w-9/12 m-auto border border-gray-200 rounded-xl p-10">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-bold">How do you manipulate an element's attributes and style using the DOM?</div>
+  <div class="collapse-content">
+    <p>We covered how to create, insert, replace, and remove elements from the Document Object Model (DOM) with built-in methods. By increasing your proficiency in manipulating the DOM, you are better able to utilize JavaScript’s interactive capabilities and modify web elements.In this tutorial, you will learn how to further alter the DOM by modifying styles, classes, and other attributes of HTML element nodes. This will give you a greater understanding of how to manipulate essential elements within the DOM.</p>
+  </div>
+</div>
+</section>
+  <!-- blog section end -->
+</main>
+<footer>
+    <div class="bg-stone-200 p-10 mt-10"></div>
+</footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
